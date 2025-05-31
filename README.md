@@ -31,9 +31,11 @@ This project is a lightweight, beginner-friendly SIEM written in Python, focused
 All critical events are parsed from the Windows Event Logs and pushed to a Discord channel using a webhook, so you can get real-time alerts without setting up a full SIEM stack.
 
 🛠️ Technical Overview
+
 The tool leverages Python's capabilities to interact with Windows Event Logs, utilizing modules such as pywin32 for event log access and requests for sending HTTP POST requests to Discord webhooks. By parsing relevant event IDs, the tool identifies specific security-related activities and formats them into readable messages for Discord.
 
 🔍 Features
+
 The SIEM tool focuses on detecting and alerting the following events:
 
 * User Account Creation: Identifies when new user accounts are added.
@@ -71,6 +73,7 @@ The tool sends alerts using Discord webhooks. Each alert includes:
 Extracted details (e.g., account name, application, USB device)
 
 🚀 Getting Started
+
 To deploy the SIEM tool:
 
 1. Set Up Discord Webhook: Create a webhook in your desired Discord channel to receive alerts.
